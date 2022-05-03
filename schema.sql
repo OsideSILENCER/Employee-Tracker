@@ -1,13 +1,13 @@
--- Drops the inventory_db if it exists currently --
+-- Drops the employee_db if it exists currently --
 DROP DATABASE IF EXISTS employee_db;
--- Creates the inventory_db database --
+-- Creates the employee_db database --
 CREATE DATABASE employee_db;
 
 -- use inventory_db database --
 USE employee_db;
 
--- Creates the table "produce" within inventory_db --
-CREATE TABLE produce (
+-- Creates the table "produce" within employee_db --
+CREATE TABLE employee (
   -- Creates a numeric column called "id" --
   id INT NOT NULL,
   -- Makes a string column called "name" which cannot contain null --
@@ -15,10 +15,15 @@ CREATE TABLE produce (
 );
 
 -- Insert multiple produce items --
-INSERT INTO produce (id, name)
+INSERT INTO employee (id, First_name, last_name)
 VALUES
-    ( 1, "apple"),
-    ( 2, "orange"),
-    ( 3, "banana");
-    
+    ( 1, 'John', 'Doe'),
+    ( 2, 'Mike', 'Chan'),
+    ( 3, 'Ashley', 'Rodriguez'), 
+    ( 4, 'Kevin', 'Tupik'),
+    ( 5, 'Kunal', 'Singh' ),
+    ( 6, 'Malia', 'Brown'),
+    ( 7, 'Sarah', 'Lourd'),
+    ( 8, 'Tom', 'Allen');
+
     

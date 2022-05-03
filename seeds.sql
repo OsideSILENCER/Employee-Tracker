@@ -9,20 +9,24 @@ VALUES
 ('Security'),
 ('Sales');
 
-INSERT INTO role_id (title, salary, department_id)
+INSERT INTO role_id (title, salary)
 VALUES
-('Web Developer', 90000, 1),
-('Accountant', 70000, 2),
-('Paralegal', 50000, 3),
-('HR Manager', 70000, 4),
-('IT Security Engineer', 90000, 5),
-('Sales Rep', 40000, 6);
+('Sales Lead', 100000),
+('Salesperson', 80000),
+('Engineering', 150000),
+('Engineering', 120000),
+('Financing', 160000),
+('Financing', 125000),
+('Legal', 250000),
+('Legal', 19000);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
+INSERT INTO employee (first_name, last_name, manager)
 VALUES 
-('John', 'Doe', 1, 458),
-('Mike', 'Chan', 2, 276),
-('David', 'Miller', 3, 486),
-('Maria', 'Hall', 4, 126),
-('Linda', 'Martin', 5, 724),
-('Taylor', 'Wilson', 6, 157);
+('John', 'Doe', null),
+('Mike', 'Chan', "John Doe"),
+('Ashley', 'Rodriguez', null),
+('Kevin', 'Tupik', "Ashkey Rodriguez"),
+('Kunal', 'Singh', null,
+('Malia', 'Brown', "Kunal Singh"),
+('Sarah', 'Lourd', null),
+('Tom', 'Allen', "Sarah Lourd");
