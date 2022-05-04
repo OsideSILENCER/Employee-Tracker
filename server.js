@@ -1,3 +1,10 @@
+const mysql = require('mysql');
+const inquier = require('inquirer');
+
+const connection = mysql.createConnection({
+  host: 'localhost'
+
+
 {
     type: 'input', 
     name: 'addDept',
@@ -14,7 +21,7 @@
   }
 ])
   .then(answer => {
-@@ -191,12 +199,28 @@ addRole = () => {
+ addRole = () => {
   {
     type: 'input', 
     name: 'role',
@@ -45,7 +52,7 @@
   }
 ])
   .then(answer => {
-@@ -242,12 +266,28 @@ addEmployee = () => {
+addEmployee = () => {
   {
     type: 'input',
     name: 'fistName',
@@ -76,3 +83,6 @@
   }
 ])
   .then(answer => {
+    startPrompt();
+  });
+})

@@ -11,7 +11,8 @@ CREATE TABLE department (
   -- Creates a numeric column called "id" --
   id INT NOT NULL,
   -- Makes a string column called "name" which cannot contain null --
-  name VARCHAR(30) NOT NULL
+  name VARCHAR(30) NOT NULL,
+  PRIMARY KEY (departmentID)
 );
 
 -- Creates the table "role_id" within employee_db --
